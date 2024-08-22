@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Website Keren</title>
+    <style>
+        /* Reset gaya default browser */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6f61;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff9671;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x600/?services') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .services-section {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services-section h3 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 30%;
+        }
+
+        .service img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .service h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .services {
+                flex-direction: column;
+            }
+
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" style="color: #fff; text-decoration: none;">Website Keren</a></h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="daftar.html">Daftar</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Layanan Kami</h2>
+    </section>
+
+    <section class="services-section">
+        <h3>Apa yang Kami Tawarkan</h3>
+        <div class="services">
+            <div class="service">
+                <img src="https://source.unsplash.com/100x100/?design" alt="Desain Kreatif">
+                <h4>Desain Kreatif</h4>
+                <p>Kami menawarkan desain kreatif yang menarik dan profesional untuk kebutuhan Anda.</p>
+            </div>
+            <div class="service">
+                <img src="https://source.unsplash.com/100x100/?coding" alt="Pengembangan Web">
+                <h4>Pengembangan Web</h4>
+                <p>Layanan pengembangan web kami akan membawa bisnis Anda ke tingkat berikutnya.</p>
+            </div>
+            <div class="service">
+                <img src="https://source.unsplash.com/100x100/?marketing" alt="Digital Marketing">
+                <h4>Digital Marketing</h4>
+                <p>Kami membantu Anda untuk mempromosikan bisnis Anda secara online dengan strategi yang efektif.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Website Keren. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+
+</html>

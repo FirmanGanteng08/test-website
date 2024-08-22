@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Website Keren</title>
+    <style>
+        /* Reset gaya default browser */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6f61;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff9671;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x600/?teamwork') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            flex: 1;
+            margin: 10px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 8px solid #ff9671;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .team-member h4 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .team {
+                flex-direction: column;
+            }
+
+            .team-member {
+                margin-bottom: 20px;
+            }
+
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tentang Kami</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="daftar.html">Daftar</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Tim di Balik Website Keren</h2>
+    </section>
+
+    <section class="content">
+        <h3>Misi Kami</h3>
+        <p>Kami adalah tim yang berdedikasi untuk menciptakan solusi inovatif dan memberikan dampak positif bagi pengguna kami. Misi kami adalah membantu orang untuk mendapatkan pengalaman terbaik melalui teknologi yang mudah diakses dan bermanfaat.</p>
+
+        <h3>Visi Kami</h3>
+        <p>Visi kami adalah menjadi pemimpin dalam industri teknologi dengan menyediakan layanan berkualitas tinggi dan membangun komunitas yang terhubung. Kami percaya bahwa kolaborasi dan inovasi adalah kunci untuk masa depan yang lebih cerah.</p>
+
+        <h3>Tim Kami</h3>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://source.unsplash.com/100x100/?person" alt="Team Member 1">
+                <h4>John Doe</h4>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="https://source.unsplash.com/100x100/?person" alt="Team Member 2">
+                <h4>Jane Smith</h4>
+                <p>Chief Technology Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://source.unsplash.com/100x100/?person" alt="Team Member 3">
+                <h4>Michael Johnson</h4>
+                <p>Head of Design</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Website Keren. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+
+</html>
